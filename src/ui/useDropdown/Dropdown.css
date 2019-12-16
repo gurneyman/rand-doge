@@ -1,0 +1,39 @@
+/* based on https://clicknathan.com/web-design/styling-select-elements-crossbrowser/ */
+.select-container {
+  position: relative;
+}
+
+.select-container > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem;
+  background: white;
+  border: 1px solid var(--purple);
+  border-radius: 3px;
+  color: var(--purple);
+  letter-spacing: 1px;
+  padding: 1rem 2rem 1rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.select-container:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.select-container:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 1.5rem;
+  right: 0.75rem;
+  border-top: 8px solid var(--purple);
+  opacity: 0.5;
+}
+select::-ms-expand {
+  display: none;
+}

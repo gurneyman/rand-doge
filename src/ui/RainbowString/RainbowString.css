@@ -1,0 +1,16 @@
+
+.rainbow-string > .rainbow-string__char:nth-child(1n) {
+    color: var(--purple);
+}
+
+.rainbow-string > .rainbow-string__char:nth-child(2n) {
+    color: var(--red);
+}
+
+.rainbow-string > .rainbow-string__char:nth-child(3n) {
+    color: var(--orange);
+}
+
+.rainbow-string > .rainbow-string__char:nth-child(4n) {
+    color: var(--pink);
+}
